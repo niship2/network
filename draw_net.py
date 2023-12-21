@@ -85,7 +85,7 @@ def draw_net(
     fig.add_scatter(
         x=draw_df["x"],
         y=draw_df["y"],
-        mode="markers",
+        mode="markers+text" if label_flag else "markers",
         text=draw_df["label"],
         hoverinfo="text",
     )
